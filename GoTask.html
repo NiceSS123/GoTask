@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GoTask</title>
+</head>
+<body>
+    echo "# GoTask" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/NiceSS123/GoTask.git
+git push -u origin main
+<h1>Friday, 03rd of May</h1>
+<table border="1" cellspacing="0" cellpadding="0">
+<tr>
+<th text-align="center">Activity</th>
+<th text-align="center">Difficulty</th>
+<th text-align="center">Time</th>
+</tr>
+<tr>
+<td text-align="center"><label for="activity"></label><br>
+<input type="text" id="activity" name="activity"></td>
+<td text-align="center"><label for="diff"></label>
+<select name="diff" id="diff">
+<option value="easy">Easy</option>
+<option value="medium">Medium</option>
+<option value="hard">Hard</option></td>
+<td><br><style>
+body {
+font-family: Arial, sans-serif;
+}
+.timer-app {
+text-align: center;
+}
+.timer-inputs {
+margin-bottom: 20px;
+}
+.timer-inputs input[type="number"] {
+width: 50px;
+margin: 0 10px;
+}
+.hour-input {
+display: inline-block;
+margin-right: 20px;
+}
+.start-button {
+background-color: #4CAF50;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+.start-button:hover {
+background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+<div class="timer-app">
+<div class="timer-inputs hour-input">
+<input type="number" id="hour" value="1" min="1" max="24"> hours
+</div>
+<button class="start-button" id="start-button">Start Timer</button>
+<div id="app"></div>
+</div>
+<script>
+// JavaScript code will go here
+const startButton = document.getElementById("start-button");
+const hourInput = document.getElementById("hour");
+const app = document.getElementById("app");
+// Function to start the timer
+function startTimer() {
+const hour = parseInt(hourInput.value);
+const totalSeconds = hour * 60 * 60;
+let remainingSeconds = totalSeconds;
+// Update the timer every second
+const timerInterval = setInterval(() => {
+const minutes = Math.floor(remainingSeconds / 60);
+const seconds = remainingSeconds % 60;
+// Format the timer as MM:SS
+const formattedTime = `${minutes.toString().padStart(2,
+"0")}:${seconds.toString().padStart(2, "0")}`;
+app.textContent = formattedTime;
+// Decrease the remaining seconds
+remainingSeconds--;
+// Stop the timer if it reaches 0
+if (remainingSeconds < 0) {
+clearInterval(timerInterval);
+app.textContent = "Time's up!";
+}
+}, 1000);
+}
+// Add an event listener to the start button
+startButton.addEventListener("click", startTimer);
+</script>
+</body>
+</html></td>
+</tr>
+<tr>
+<td text-align="center"><label for="activity"></label><br>
+<input type="text" id="activity" name="activity"></td>
+<td text-align="center"><label for="diff"></label>
+<select name="diff" id="diff">
+<option value="easy">Easy</option>
+<option value="medium">Medium</option>
+<option value="hard">Hard</option></td>
+<td><br><style>
+body {
+font-family: Arial, sans-serif;
+}
+.timer-app {
+text-align: center;
+}
+.timer-inputs {
+margin-bottom: 20px;
+}
+.timer-inputs input[type="number"] {
+width: 50px;
+margin: 0 10px;
+}
+.hour-input {
+display: inline-block;
+margin-right: 20px;
+}
+.start-button {
+background-color: #4CAF50;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+.start-button:hover {
+background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+<div class="timer-app">
+<div class="timer-inputs hour-input">
+<input type="number" id="hour" value="1" min="1" max="24"> hours
+</div>
+<button class="start-button" id="start-button">Start Timer</button>
+<div id="app"></div>
+</div>
+<script>
+// JavaScript code will go here
+const startButton = document.getElementById("start-button");
+const hourInput = document.getElementById("hour");
+const app = document.getElementById("app");
+// Function to start the timer
+function startTimer() {
+const hour = parseInt(hourInput.value);
+const totalSeconds = hour * 60 * 60;
+let remainingSeconds = totalSeconds;
+// Update the timer every second
+const timerInterval = setInterval(() => {
+const minutes = Math.floor(remainingSeconds / 60);
+const seconds = remainingSeconds % 60;
+// Format the timer as MM:SS
+const formattedTime = `${minutes.toString().padStart(2,
+"0")}:${seconds.toString().padStart(2, "0")}`;
+app.textContent = formattedTime;
+// Decrease the remaining seconds
+remainingSeconds--;
+// Stop the timer if it reaches 0
+if (remainingSeconds < 0) {
+clearInterval(timerInterval);
+app.textContent = "Time's up!";
+}
+}, 1000);
+}
+// Add an event listener to the start button
+startButton.addEventListener("click", startTimer);
+</script>
+</body>
+</html></td>
+</tr>
+<tr>
+<td text-align="center"><label for="activity"></label><br>
+<input type="text" id="activity" name="activity"></td>
+<td text-align="center"><label for="diff"></label>
+<select name="diff" id="diff">
+<option value="easy">Easy</option>
+<option value="medium">Medium</option>
+<option value="hard">Hard</option></td>
+<td><br><style>
+body {
+font-family: Arial, sans-serif;
+}
+.timer-app {
+text-align: center;
+}
+.timer-inputs {
+margin-bottom: 20px;
+}
+.timer-inputs input[type="number"] {
+width: 50px;
+margin: 0 10px;
+}
+.hour-input {
+display: inline-block;
+margin-right: 20px;
+}
+.start-button {
+background-color: #4CAF50;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+.start-button:hover {
+background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+<div class="timer-app">
+<div class="timer-inputs hour-input">
+<input type="number" id="hour" value="1" min="1" max="24"> hours
+</div>
+<button class="start-button" id="start-button">Start Timer</button>
+<div id="app"></div>
+</div>
+<script>
+// JavaScript code will go here
+const startButton = document.getElementById("start-button");
+const hourInput = document.getElementById("hour");
+const app = document.getElementById("app");
+// Function to start the timer
+function startTimer() {
+const hour = parseInt(hourInput.value);
+const totalSeconds = hour * 60 * 60;
+let remainingSeconds = totalSeconds;
+// Update the timer every second
+const timerInterval = setInterval(() => {
+const minutes = Math.floor(remainingSeconds / 60);
+const seconds = remainingSeconds % 60;
+// Format the timer as MM:SS
+const formattedTime = `${minutes.toString().padStart(2,
+"0")}:${seconds.toString().padStart(2, "0")}`;
+app.textContent = formattedTime;
+// Decrease the remaining seconds
+remainingSeconds--;
+// Stop the timer if it reaches 0
+if (remainingSeconds < 0) {
+clearInterval(timerInterval);
+app.textContent = "Time's up!";
+}
+}, 1000);
+}
+// Add an event listener to the start button
+startButton.addEventListener("click", startTimer);
+</script>
+</body>
+</html></td>
+</tr>
+</table><br>
+<input type="submit" value="Done!">
+git remote add origin https://github.com/NiceSS123/GoTask.git
+git branch -M main
+git push -u origin main
+</body>
+</html>
