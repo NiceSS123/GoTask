@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="scripts.js"></script>
+<title>Document</title>
+</head>
+<body>
+<h1>Friday, 03rd of May</h1>
+<table border="1" cellspacing="0" cellpadding="0" class="table-container">
+<tr>
+<th text-align="center">Activity</th>
+<th text-align="center">Difficulty</th>
+<th text-align="center">Status</th>
+</tr>
+<tr>
+<td text-align="center"><label for="activity"></label><br>
+<input type="text" id="activity" name="activity"></td>
+<td text-align="center"><label for="diff"></label>
+<select name="diff" id="diff">
+<option value="easy">Easy</option>
+<option value="medium">Medium</option>
+<option value="hard">Hard</option></td>
+<td>
+<label for="done-button1">
+<input type="checkbox" id="done-button1">
+<span class="button-text1">Done</span>
+</label>
+</td>
+</tr>
+<tr>
+<td text-align="center"><label for="activity"></label><br>
+<input type="text" id="activity" name="activity"></td>
+<td text-align="center"><label for="diff"></label>
+<select name="diff" id="diff">
+<option value="easy">Easy</option>
+<option value="medium">Medium</option>
+<option value="hard">Hard</option></td>
+<td>
+<label for="done-button2">
+<input type="checkbox" id="done-button2">
+<span class="button-text2">Done</span>
+</label>
+</td>
+</tr>
+<tr>
+<td text-align="center"><label for="activity"></label><br>
+<input type="text" id="activity" name="activity"></td>
+<td text-align="center"><label for="diff"></label>
+<select name="diff" id="diff">
+<option value="easy">Easy</option>
+<option value="medium">Medium</option>
+<option value="hard">Hard</option></td>
+<td>
+<label for="done-button3">
+<input type="checkbox" id="done-button3">
+<span class="button-text3">Done</span>
+</label>
+</td>
+</tr>
+</table><br>
+<div class="container">
+<div id="timer">24:00:00</div>
+<button onclick="startTimer()">Start</button>
+<button onclick="stopTimer()">Stop</button>
+<button onclick="resetTimer()">Reset</button>
+</div>
+</body>
+</html>
